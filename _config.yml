@@ -24,10 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Gainwu"
   pronouns         : # example: "she/her"  
-  bio              : "A student who tries to explore herself"
-  location         : "China,shenzhen"
+  bio              : "A student who tries to explore herself:)"
+  location         : "Shenzhen,China"
   employer         : "GDUT"
-  uri              : "https://github.com/Gainwu" # URL
+  # uri              : "https://github.com/Gainwu" # URL
   email            : "1462892173@qq.com" 
 
   # Academic websites
