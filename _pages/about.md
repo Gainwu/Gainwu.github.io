@@ -7,6 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-I’m a student who is exploring myself.This is my learning record blog, and I will record my thoughts and learnings here.
+I’m a student who is exploring myself. This is my learning record blog, and I will record my thoughts and learnings here.
 
-Thanks for coming.Let's work together and become better ourselves!
+Thanks for coming. Let's work together and become better ourselves!
