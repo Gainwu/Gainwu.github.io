@@ -1,3 +1,11 @@
+---
+layout: single
+title: "Deeplearning record"
+permalink: /deeplearning/
+author_profile: true
+---
+
+
 Deeplearning record
 ======
 
