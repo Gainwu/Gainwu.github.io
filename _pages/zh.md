@@ -1,6 +1,6 @@
 ---
 # layout: single
-title: "中文界面"
+title: ""
 permalink: /zh/
 author_profile: true
 ---
