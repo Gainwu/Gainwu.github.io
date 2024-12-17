@@ -273,10 +273,10 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
+  # _blogs
   - scope:
       path: ""
-      type: talks
+      type: blogs
     values:
       layout: talk
       author_profile: true

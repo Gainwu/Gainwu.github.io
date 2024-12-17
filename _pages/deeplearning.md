@@ -6,10 +6,8 @@ author_profile: true
 ---
 
 
-Deeplearning record
-======
 
-### Preface 
+# Preface 
 In the recent past, I have been recording my study notes in Notion. To facilitate my own review and organization later on, I will regularly organize the content here, which is also a form of open-source, allowing everyone to review the content written by the author (a beginner). Since it is a beginner's study, the learning content is for reference only. : ) 
 <div style="text-align: Right;">
   2024.12.16 by Gain
