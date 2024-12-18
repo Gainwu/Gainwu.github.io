@@ -5,6 +5,7 @@
   position: sticky;
   top: 30px;
   max-height: calc(100vh - 30px); /* 可见视口高度减去顶部偏移 */
+  height: auto; /* 高度根据内容自适应 */
   overflow-y: auto;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
