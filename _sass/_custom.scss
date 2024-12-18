@@ -3,13 +3,13 @@
 /* 右侧目录样式 */
 .page__toc {
   position: sticky;
-  top: 30px; /* 粘性定位到视口顶部 */
+  top: 50px; /* 粘性定位到视口顶部 */
   max-height: calc(100vh - 30px); /* 限制最大高度为视口高度减去顶部偏移量 */
   overflow-y: auto; /* 启用滚动 */
   background-color: #ffffff; /* 背景颜色 */
   border: 1px; /* 边框 */
   padding: 10px; /* 内边距 */
-  font-size: 0.9em; /* 字体大小 */
+  font-size: 1em; /* 字体大小 */
   box-sizing: border-box; /* 确保内边距不影响宽度 */
   background-clip: padding-box; /* 限制背景只填充到内容区域 */
 }
