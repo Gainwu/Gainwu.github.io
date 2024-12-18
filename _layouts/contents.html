@@ -82,12 +82,15 @@ layout: default
   <!-- 右侧固定目录 -->
   {% if page.toc %}
   <aside class="page__toc">
-    <div style="position: sticky; top: 10px; background: #f9f9f9; border: 1px solid #ddd; padding: 10px;">
+    <div>
       <h3>目录</h3>
-      {{ content | split: '<!-- TOC -->' | last | split: '<!-- /TOC -->' | first }}
+      {% assign toc_start = content | split: '<!-- TOC -->' | last %}
+      {% assign toc_only = toc_start | split: '<!-- /TOC -->' | first %}
+      {{ toc_only | markdownify }}
     </div>
   </aside>
   {% endif %}
+
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
