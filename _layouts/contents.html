@@ -84,20 +84,23 @@ layout: default
   <aside class="page__toc" style="flex: 1; padding: 10px;">
     <div style="position: sticky; top: 10px; background-color: #f9f9f9; border: 1px solid #ddd; padding: 10px;">
       <h3>目录</h3>
-      <ul>
-        {% assign headers = content | markdownify | split: '<h' %}
-        {% for header in headers offset: 1 %}
-          {% assign header_level = header | slice: 0, 1 %}
-          {% assign header_text = header | split: '>' | last | split: '</h' | first %}
-          {% assign header_id = header_text | strip | slugify %}
-          <li style="margin-left: {{ header_level | times: 10 }}px;">
-            <a href="#{{ header_id }}">{{ header_text }}</a>
-          </li>
+      <ul style="list-style: none; padding-left: 0;">
+        {% assign headers = content | split: '<h' %}
+        {% for header in headers %}
+          {% if header contains 'id="' %}
+            {% assign header_level = header | slice: 0, 1 %}
+            {% assign header_text = header | split: '>' | last | split: '</h' | first %}
+            {% assign header_id = header | split: 'id="' | last | split: '"' | first %}
+            <li style="margin-left: {{ header_level | times: 10 }}px;">
+              <a href="#{{ header_id }}" class="toc-link">{{ header_text }}</a>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
   </aside>
   {% endif %}
+
 
 
 
