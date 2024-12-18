@@ -81,25 +81,14 @@ layout: default
 
   <!-- 右侧固定目录 -->
   {% if page.toc %}
-  <aside class="page__toc" style="flex: 1; padding: 10px;">
-    <div style="position: sticky; top: 10px; background-color: #f9f9f9; border: 1px solid #ddd; padding: 10px;">
+  <aside class="page__toc">
+    <div style="position: sticky; top: 10px; background: #f9f9f9; border: 1px solid #ddd; padding: 10px;">
       <h3>目录</h3>
-      <ul style="list-style: none; padding-left: 0;">
-        {% assign headers = content | split: '<h' %}
-        {% for header in headers %}
-          {% if header contains 'id="' %}
-            {% assign header_level = header | slice: 0, 1 %}
-            {% assign header_text = header | split: '>' | last | split: '</h' | first %}
-            {% assign header_id = header | split: 'id="' | last | split: '"' | first %}
-            <li style="margin-left: {{ header_level | times: 10 }}px;">
-              <a href="#{{ header_id }}" class="toc-link">{{ header_text }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      {{ content | toc }}
     </div>
   </aside>
   {% endif %}
+
 
 
 
