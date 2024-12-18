@@ -4,7 +4,7 @@
 .page__toc {
   position: sticky;
   top: 30px;
-  max-height: calc(100vh - 30px); /* 可见视口高度减去顶部偏移 */
+  // max-height: calc(100vh - 30px); /* 可见视口高度减去顶部偏移 */
   height: auto; /* 高度根据内容自适应 */
   overflow-y: auto;
   background-color: #f9f9f9;
@@ -13,11 +13,11 @@
   font-size: 0.9em;
 }
 
-.page__toc::after {
-  content: "";
-  display: block;
-  clear: both;
+.page__toc-container {
+  height: auto; /* 父容器高度根据内容适配 */
+  overflow: visible; /* 确保背景不被错误覆盖 */
 }
+
 
 .page__toc h3 {
   font-size: 1.2em;
