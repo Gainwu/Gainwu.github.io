@@ -5,11 +5,6 @@ permalink: /deeplearning/
 author_profile: true
 ---
 
-{% for item in site.deeplearning %}
-  <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-  <p>{{ item.date | date: "%Y-%m-%d" }}</p>
-{% endfor %}
-
 # Preface 
 In the recent past, I have been recording my study notes in Notion. To facilitate my own review and organization later on, I will regularly organize the content here, which is also a form of open-source, allowing everyone to review the content written by the author (a beginner). Since it is a beginner's study, the learning content is for reference only. : ) 
 <div style="text-align: Right;">
@@ -24,3 +19,8 @@ In the recent past, I have been recording my study notes in Notion. To facilitat
 
 
 ## Table of Contents
+
+{% for item in site.deeplearning %}
+  <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+  <p>{{ item.date | date: "%Y-%m-%d" }}</p>
+{% endfor %}
