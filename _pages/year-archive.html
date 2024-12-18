@@ -15,5 +15,17 @@ redirect_from:
     <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
-  {% include archive-single.html %}
+  
+  <div class="post-summary">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt }}</p>
+  </div>
+  
 {% endfor %}
+
+<div class="pagination">
+  <ul>
+    <li>{% if paginator.has_prev %}<a href="{{ paginator.prev_page_path }}">Previous</a>{% endif %}</li>
+    <li>{% if paginator.has_next %}<a href="{{ paginator.next_page_path }}">Next</a>{% endif %}</li>
+  </ul>
+</div>
