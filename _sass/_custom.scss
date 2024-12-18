@@ -13,10 +13,6 @@
   font-size: 0.9em;
 }
 
-.page__toc-container {
-  height: auto; /* 父容器高度根据内容适配 */
-  overflow: visible; /* 确保背景不被错误覆盖 */
-}
 
 
 .page__toc h3 {
