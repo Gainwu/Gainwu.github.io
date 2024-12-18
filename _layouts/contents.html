@@ -84,14 +84,10 @@ layout: default
   <aside class="page__toc">
     <div style="position: sticky; top: 10px; background: #f9f9f9; border: 1px solid #ddd; padding: 10px;">
       <h3>目录</h3>
-      {{ content | split: '* TOC' | last | split: '{:toc}' | first }}
+      {{ content | replace: "* TOC\n{:toc}", "" }}
     </div>
   </aside>
   {% endif %}
-
-
-
-
 
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
