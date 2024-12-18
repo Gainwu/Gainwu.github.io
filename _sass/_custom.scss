@@ -11,9 +11,8 @@
   padding: 10px;
   font-size: 0.9em;
   box-sizing: border-box; /* 确保 padding 不影响宽度 */
+  background-clip: padding-box; /* 限制背景颜色只填充到内容范围 */
 }
-
-
 
 
 .page__toc h3 {
