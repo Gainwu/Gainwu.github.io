@@ -1,0 +1,36 @@
+/* custom.scss */
+
+/* 右侧目录样式 */
+.page__toc {
+  position: sticky;
+  top: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.page__toc h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.page__toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page__toc ul li {
+  margin: 5px 0;
+}
+
+.page__toc ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.page__toc ul li a:hover {
+  text-decoration: underline;
+}
