@@ -39,3 +39,36 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* TOC 样式 */
+.page__toc {
+  position: sticky; /* 让目录固定在页面右侧 */
+  top: 10px; /* 距离页面顶部 10px */
+  background-color: #f9f9f9; /* 浅灰背景 */
+  border: 1px solid #ddd; /* 边框 */
+  padding: 10px; /* 内边距 */
+  font-size: 0.9em; /* 字体大小 */
+}
+
+.page__toc h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.page__toc ul {
+  list-style: none; /* 去掉圆点标识 */
+  padding-left: 0; /* 去掉左侧缩进 */
+}
+
+.page__toc ul li {
+  margin: 5px 0; /* 列表项间距 */
+}
+
+.page__toc ul li a {
+  text-decoration: none; /* 去掉下划线 */
+  color: #007bff; /* 链接颜色 */
+}
+
+.page__toc ul li a:hover {
+  text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
