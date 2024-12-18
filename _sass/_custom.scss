@@ -3,15 +3,16 @@
 /* 右侧目录样式 */
 .page__toc {
   position: sticky;
-  top: 30px;
-  // max-height: calc(100vh - 30px); /* 可见视口高度减去顶部偏移 */
-  height: auto; /* 高度根据内容自适应 */
-  overflow-y: auto;
-  background-color: #f9f9f9;
+  top: 30px; /* 固定在视口顶部 30px */
+  max-height: calc(100vh - 30px); /* 限制最大高度为视口减去顶部偏移量 */
+  overflow-y: auto; /* 如果内容过多，则启用滚动 */
+  background-color: #f9f9f9; /* 背景颜色 */
   border: 1px solid #ddd;
   padding: 10px;
   font-size: 0.9em;
+  box-sizing: border-box; /* 确保 padding 不影响宽度 */
 }
+
 
 
 
