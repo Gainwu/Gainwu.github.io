@@ -85,19 +85,12 @@ layout: default
     <div style="position: sticky; top: 10px; background-color: #f9f9f9; border: 1px solid #ddd; padding: 10px;">
       <h3>目录</h3>
       <ul>
-        {% assign headers = content | markdownify | split: '<h' %}
-        {% for header in headers offset:1 %}
-          {% assign header_level = header | slice: 0, 1 %}
-          {% assign header_content = header | split: '</h' | first %}
-          {% assign header_id = header_content | replace: '>', '' | strip | slugify %}
-          <li style="margin-left: {{ header_level | times: 10 }}px;">
-            <a href="#{{ header_id }}">{{ header_content | remove: '>' | strip }}</a>
-          </li>
-        {% endfor %}
+        {{ content | toc }}
       </ul>
     </div>
   </aside>
   {% endif %}
+
 
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
