@@ -3,7 +3,7 @@
 /* 右侧目录样式 */
 .page__toc {
   position: sticky;
-  top: 10px;
+  top: 30px;
   max-height: 90vh;
   overflow-y: auto;
   background-color: #f9f9f9;
@@ -34,3 +34,13 @@
 .page__toc ul li a:hover {
   text-decoration: underline;
 }
+
+/* 隐藏正文中的 TOC */
+.page__content ul {
+  display: none;
+}
+
+.page__content ul + hr {
+  display: none;
+}
+
