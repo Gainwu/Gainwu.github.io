@@ -13,6 +13,12 @@
   font-size: 0.9em;
 }
 
+.page__toc::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .page__toc h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
