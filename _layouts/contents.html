@@ -83,7 +83,7 @@ layout: default
   {% if page.toc %}
   <aside class="page__toc">
     <div>
-      <h3>目录</h3>
+      <h3>Table of Contents</h3>
       {% assign toc_start = content | split: '<!-- TOC -->' | last %}
       {% assign toc_only = toc_start | split: '<!-- /TOC -->' | first %}
       {{ toc_only | markdownify }}
