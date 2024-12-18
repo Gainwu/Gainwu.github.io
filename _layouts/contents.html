@@ -84,7 +84,7 @@ layout: default
   <aside class="page__toc">
     <div style="position: sticky; top: 10px; background: #f9f9f9; border: 1px solid #ddd; padding: 10px;">
       <h3>目录</h3>
-      {{ content | replace: "* TOC\n{:toc}", "" }}
+      {{ content | split: '<!-- TOC -->' | last | split: '<!-- /TOC -->' | first }}
     </div>
   </aside>
   {% endif %}
