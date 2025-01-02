@@ -21,6 +21,11 @@ In the recent past, I have been recording my study notes in Notion. To facilitat
 ## Table of Contents
 
 {% for item in site.deeplearning %}
-  <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-  <p>{{ item.date | date: "%Y-%m-%d" }}</p>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h2 style="margin: 0;">
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    </h2>
+    <span style="font-size: 0.9em; color: gray;">{{ item.date | date: "%Y-%m-%d" }}</span>
+  </div>
 {% endfor %}
+
